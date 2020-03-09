@@ -14,5 +14,14 @@ def compute_prob(nTrials, numObserved):
 
 
 
+print(compute_prob(30,22))
+
+
+
+
+#Alternative approach
+import scipy.stats
+def compute_prob2(nTrials, numObserved):
+    return scipy.stats.binom.pmf(22,30,0.5)
 
 
